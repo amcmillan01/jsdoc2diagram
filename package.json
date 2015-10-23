@@ -15,6 +15,9 @@
     "d3",
     "tree"
   ],
+  "scripts": {
+    "test": "echo 'write some tests!'"
+  },
   "dependencies": {
     "lodash.template": "^3.6.2"
   }
