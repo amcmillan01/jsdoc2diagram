@@ -1,26 +1,20 @@
 language: node_js
 node_js:
-  - "0.12"
-
+- 0.12
 notifications:
   email:
     recipients:
-      - tates001@gmail.com
+    - tates001@gmail.com
     on_success: always
     on_failure: always
-
-before_install:
-  npm install -g npm@'>=2.13.5'
-
 deploy:
   provider: npm
   email: tates001@gmail.com
-  api_key: $API_KEY
+  api_key:
+    secure: $API_KEY
   on:
     tags: true
     repo: amcmillan01/jsdoc2diagram
-
 script:
-  - "npm install"
-  - "npm publish"
-
+- npm install
+- npm publish
