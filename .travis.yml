@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "0.12"
+
+notifications:
+  email:
+    recipients:
+      - tates001@gmail..com
+    on_success: always
+    on_failure: always
+
+script:
+  - "npm install"
+  - "npm publish"
