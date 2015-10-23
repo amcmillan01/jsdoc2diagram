@@ -9,6 +9,9 @@ notifications:
     on_success: always
     on_failure: always
 
+before_install:
+  npm install -g npm@'>=2.13.5'
+
 deploy:
   provider: npm
   email: tates001@gmail.com
