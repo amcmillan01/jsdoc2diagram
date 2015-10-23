@@ -15,4 +15,4 @@ deploy:
   api_key: $API_KEY
   on:
     tags: true
-    repo: amcmillan01/jsdoc2diagram
+    branch: master
