@@ -1,6 +1,7 @@
 ## jsdoc2diagram
 
-Create D3 Tree Diagram from your awesome jsdoc 
+jsdoc2diagram is a [JSDoc](http://usejsdoc.org/) template that creates a [D3 tree diagram](http://bl.ocks.org/) from yout code's jsdoc documentations.
+
 
 ### Getting Started
 
@@ -10,6 +11,6 @@ Create D3 Tree Diagram from your awesome jsdoc
 
 #### Reference
 
-- https://github.com/jsdoc3/jsdoc
+- http://usejsdoc.org/
 - http://bl.ocks.org/
 
