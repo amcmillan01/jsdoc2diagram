@@ -5,10 +5,19 @@ node_js:
 notifications:
   email:
     recipients:
-      - tates001@gmail..com
+      - tates001@gmail.com
     on_success: always
     on_failure: always
+
+deploy:
+  provider: npm
+  email: tates001@gmail.com
+  api_key: $API_KEY
+  on:
+    tags: true
+    repo: amcmillan01/jsdoc2diagram
 
 script:
   - "npm install"
   - "npm publish"
+
