@@ -1,8 +1,7 @@
 language: node_js
 node_js:
 - 0.10.31
-before_install:
-  npm install -g npm@'>=2.13.5'
+before_install: npm install -g npm@'>=2.13.5'
 notifications:
   email:
     recipients:
@@ -12,7 +11,8 @@ notifications:
 deploy:
   provider: npm
   email: tates001@gmail.com
-  api_key: $API_KEY
+  api_key:
+    secure: $API_KEY
   on:
-    tags: true
+#    tags: true
     branch: master
