@@ -16,6 +16,3 @@ deploy:
   on:
     tags: true
     repo: amcmillan01/jsdoc2diagram
-script:
-- npm install
-- npm publish
