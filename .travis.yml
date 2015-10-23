@@ -12,8 +12,7 @@ notifications:
 deploy:
   provider: npm
   email: tates001@gmail.com
-  api_key:
-    secure: $API_KEY
+  api_key: $API_KEY
   on:
     tags: true
     repo: amcmillan01/jsdoc2diagram
