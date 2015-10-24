@@ -71,13 +71,14 @@ exports.publish = function(data, opt) {
       name: path,
       shortName: name,
       parent: memberOf,
-      type: doc.kind
+      type: doc.kind || ''
     });
 
   });
 
   var mainObj = {
     shortName: 'root',
+    type: 'root',
     children: createTreeStructure(dataSet)
   };
 
