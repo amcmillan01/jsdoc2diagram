@@ -7,7 +7,7 @@
     "url": "https://github.com/amcmillan01/jsdoc2diagram.git"
   },
   "author": "Andrei McMillan",
-  "description": "Create D3 Tree Diagram from jsdoc",
+  "description": "jsdoc2diagram is a JSDoc template that creates a D3 tree diagram from yout code's jsdoc documentation",
   "keywords": [
     "jsdoc2diagram",
     "jsdoc",
