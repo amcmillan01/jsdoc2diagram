@@ -1,13 +1,13 @@
 {
   "name": "jsdoc2diagram",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/amcmillan01/jsdoc2diagram.git"
   },
   "author": "Andrei McMillan",
-  "description": "jsdoc2diagram is a JSDoc template that creates a D3 tree diagram from yout code's jsdoc documentation",
+  "description": "jsdoc2diagram is a JSDoc template that creates a D3 tree diagram from your code's jsdoc documentation",
   "keywords": [
     "jsdoc2diagram",
     "jsdoc",

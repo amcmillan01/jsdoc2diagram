@@ -1,6 +1,6 @@
 ## jsdoc2diagram
 
-jsdoc2diagram is a [JSDoc](http://usejsdoc.org/) template that creates a [D3 tree diagram](http://bl.ocks.org/d3noob/8329404) from yout code's jsdoc documentation.
+jsdoc2diagram is a [JSDoc](http://usejsdoc.org/) template that creates a [D3 tree diagram](http://bl.ocks.org/d3noob/8329404) from your code's jsdoc documentation.
 
 #### Code
 <img src="example/code.png" border="1">
