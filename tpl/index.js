@@ -9,11 +9,11 @@
 'use strict';
 
 var treeData = {};
-var margin = {top: 20, right: 50, bottom: 20, left: 50};
-var width = 400 - margin.right - margin.left;
-var height = 500 - margin.top - margin.bottom;
+var margin = {top: 20, right: 120, bottom: 20, left: 120};
+var width;
+var height;
 var duration = 0;
-var tree = d3.layout.tree().size([height, width]);
+var tree = d3.layout.tree();
 
 var diagonal = d3.svg.diagonal()
   .projection(function(d) {
@@ -22,8 +22,6 @@ var diagonal = d3.svg.diagonal()
 
 var svg = d3.select('body').append('svg')
   .attr('id', 'diagram')
-  .attr('width', width + margin.right + margin.left)
-  .attr('height', height + margin.top + margin.bottom)
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
@@ -144,7 +142,7 @@ function update(source) {
   });
 
   // adjust the width/height
-  setTimeout(function(){
+  setTimeout(function() {
     var d = d3.select('#diagram');
     var w = svg[0][0].getBBox().width;
     var h = svg[0][0].getBBox().height;
@@ -154,6 +152,33 @@ function update(source) {
 }
 
 function init(data) {
+
+  var nodes = tree.nodes(data).reverse();
+  var map = {};
+  svg.selectAll('g.node')
+    .data(nodes, function(d) {
+      var maxRows = d.parent ? d.parent.children.length : 1;
+      var preMax = map[d.depth] || 1;
+      map[d.depth] = Math.max(preMax, maxRows);
+      return d.shortName;
+    });
+
+  var maxRow = 1;
+  var maxCols = 1;
+  // get max rows
+  for (var key in map) {
+    maxRow = Math.max(maxRow, map[key]);
+    maxCols++;
+  }
+
+  width = (maxCols * 200) - margin.right - margin.left;
+  height = (maxRow * 30) - margin.top - margin.bottom;
+  tree = d3.layout.tree().size([height, width]);
+
+  d3.select('#diagram')
+    .attr('width', width + margin.right + margin.left)
+    .attr('height', height + margin.top + margin.bottom);
+
   data.x0 = height / 2;
   data.y0 = 0;
   treeData = data;
