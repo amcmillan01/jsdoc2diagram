@@ -13,5 +13,5 @@ deploy:
   email: tates001@gmail.com
   api_key: $API_KEY
   on:
-#    tags: true
+    tags: true
     branch: master
