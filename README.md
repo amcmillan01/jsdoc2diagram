@@ -1,6 +1,6 @@
 ## jsdoc2diagram
 
-[![NPM](https://nodei.co/npm/jsdoc2diagram.png)](https://npmjs.org/package/jsdoc2diagram)
+[![npm version](https://badge.fury.io/js/jsdoc2diagram.svg)](https://badge.fury.io/js/jsdoc2diagram)
 [![Build Status](https://travis-ci.org/amcmillan01/jsdoc2diagram.svg?branch=master)](https://travis-ci.org/amcmillan01/jsdoc2diagram)
 
 jsdoc2diagram is a [JSDoc](http://usejsdoc.org/) template that creates a [D3 tree diagram](http://bl.ocks.org/d3noob/8329404) from your code's jsdoc documentation.
@@ -25,5 +25,6 @@ jsdoc2diagram is a [JSDoc](http://usejsdoc.org/) template that creates a [D3 tre
 ### License
 
 Licensed under The MIT License (MIT)
+
 For the full copyright and license information, please view the LICENSE.txt file.
 
